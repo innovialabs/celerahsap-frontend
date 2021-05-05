@@ -1,0 +1,30 @@
+$atSmall: 530px;
+$atMedium: 800px;
+$atLarge: 1010px;
+
+@mixin atSmall {
+  @media (min-width: #{$atSmall}) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: #{$atMedium}) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: #{$atLarge}) {
+    @content;
+  }
+}
+
+@mixin clearfix{
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+

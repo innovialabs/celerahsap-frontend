@@ -1,0 +1,28 @@
+body {
+	background: $mainBrown;
+	font-family: Georgia;
+	font-size: 100%;
+	line-height: 1em;
+	color: #ac9c86;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: $mainOrange;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}

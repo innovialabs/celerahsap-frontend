@@ -1,0 +1,15 @@
+.site-footer {
+	height: 60px;
+	padding: 18px 35px 0;
+	background: #20130c;
+	border-top: 1px solid #33241b;
+	font-size: 0.9em;
+	color: #fff;
+
+	&__text {
+		font-size: 0.7rem;
+
+		@mixin atMedium {
+		}
+	}
+}

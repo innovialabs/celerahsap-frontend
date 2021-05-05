@@ -1,0 +1,28 @@
+.home-box-item{
+    width: 305px;
+    margin-right: 1px;
+    background: rgb(40, 26, 18, 0.5);;
+
+    &__content {
+
+        padding: 10px 0px 40px 0px;
+
+		&-imageL {
+			float: left;
+            margin-right: 10px;
+		}
+
+        &-text{
+            font-size: 0.8rem;
+        }
+
+        &-link{
+            font-size: 0.8rem;
+            margin-top: 4px;
+            & a{
+                color: #7E6B56;
+                text-decoration: none;
+            }
+        }
+	}
+}
