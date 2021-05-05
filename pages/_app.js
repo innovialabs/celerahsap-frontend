@@ -12,29 +12,29 @@ import Seo from '../Components/seo';
 export const GlobalContext = createContext({});
 
 function MyApp({ Component, pageProps }) {
-  // const { global } = pageProps;
+  const { global } = pageProps;
 
   return (
     <>
       <Head>{/* <link rel="shortcut icon" href={getStrapiMedia(global.favicon)} /> */}</Head>
-      {/* <GlobalContext.Provider value={global}> */}
+  <GlobalContext.Provider value={global}> 
       <div className="wrapper">
         <Header />
         <Component {...pageProps} />
         <Footer />
       </div>
-      {/* </GlobalContext.Provider> */}
+      </GlobalContext.Provider> 
     </>
   );
 }
 
-// MyApp.getInitialProps = async (ctx) => {
-// 	// Calls page's `getInitialProps` and fills `appProps.pageProps`
-// 	const appProps = await App.getInitialProps(ctx);
-// 	// Fetch global site settings from Strapi
-// 	const global = await fetchAPI("/global");
-// 	// Pass the data to our page via props
-// 	return { ...appProps, pageProps: { global } };
-//   };
+MyApp.getInitialProps = async (ctx) => {
+	// Calls page's `getInitialProps` and fills `appProps.pageProps`
+	const appProps = await App.getInitialProps(ctx);
+	// Fetch global site settings from Strapi
+	// const global = await fetchAPI("/global");
+	// Pass the data to our page via props
+	return { ...appProps };
+  };
 
 export default MyApp;
