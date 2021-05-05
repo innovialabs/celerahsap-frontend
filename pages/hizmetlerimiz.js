@@ -13,14 +13,14 @@ function Hizmetlerimiz({ hizmetlerimiz }) {
   );
 }
 
-export async function getStaticProps() {
-  // Run API calls in parallel
-  // const [hizmetlerimiz] = await Promise.all([fetchAPI('/hizmetlerimiz')]);
+// export async function getStaticProps() {
+//   // Run API calls in parallel
+//   // const [hizmetlerimiz] = await Promise.all([fetchAPI('/hizmetlerimiz')]);
 
-  return {
-    // props: { hizmetlerimiz },
-    // revalidate: 1,
-  };
-}
+//   return {
+//     // props: { hizmetlerimiz },
+//     // revalidate: 1,
+//   };
+// }
 
 export default Hizmetlerimiz;

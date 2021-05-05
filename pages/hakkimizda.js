@@ -12,14 +12,14 @@ function Hakkimizda({ hakkimizda }) {
   );
 }
 
-export async function getStaticProps() {
-  // Run API calls in parallel
-  // const [hakkimizda] = await Promise.all([fetchAPI('/hakkimizda')]);
+// export async function getStaticProps() {
+//   // Run API calls in parallel
+//   // const [hakkimizda] = await Promise.all([fetchAPI('/hakkimizda')]);
 
-  return {
-    // props: { hakkimizda },
-    // revalidate: 1,
-  };
-}
+//   return {
+//     // props: { hakkimizda },
+//     // revalidate: 1,
+//   };
+// }
 
 export default Hakkimizda;

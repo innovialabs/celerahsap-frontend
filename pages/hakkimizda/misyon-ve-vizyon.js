@@ -16,14 +16,14 @@ function MisyonVeVizyon({ misyonvevizyon }) {
   );
 }
 
-export async function getStaticProps() {
-  // Run API calls in parallel
-  // const [misyonvevizyon] = await Promise.all([fetchAPI('/misyon-ve-vizyon')]);
+// export async function getStaticProps() {
+//   // Run API calls in parallel
+//   // const [misyonvevizyon] = await Promise.all([fetchAPI('/misyon-ve-vizyon')]);
 
-  return {
-    // props: { misyonvevizyon },
-    revalidate: 1
-  };
-}
+//   return {
+//     // props: { misyonvevizyon },
+//     revalidate: 1
+//   };
+// }
 
 export default MisyonVeVizyon;
