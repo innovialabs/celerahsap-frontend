@@ -1,0 +1,26 @@
+.products-home {
+  &__title {
+    font-size: 2.55rem;
+    color: $mainBrown;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
