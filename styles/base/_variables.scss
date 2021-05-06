@@ -1,3 +1,16 @@
 $mainBrown: #33231b;
 $mainOrange: #E78801;
 $mainBlue: #2f5572;
+
+
+// * MEDIA QUERY MANAGER
+$desktop-large: 160em; // ? 2560px / 16px
+$desktop: 120em; // ? 1920px / 16px
+
+$laptop-large: 90em; // ? 1440px / 16px
+
+$tab-land: 85.375em; // ? 1366px / 16px
+$tab-port: 64em; // ? 1024px / 16px
+$tab-port--sm: 48em; // ? 768px / 16px
+
+$phone: 37.5em; // ? 600px / 16px

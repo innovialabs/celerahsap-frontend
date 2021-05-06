@@ -1,0 +1,61 @@
+.hamburger {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: $mainOrange;
+  
+    &--active {
+      background-color: $mainBrown;
+    }
+  
+    // * Toggle nav-mobile button 'hamburger'
+    &-btn {
+      position: relative;
+      text-decoration: none;
+      outline: none;
+      border: none;
+  
+      &,
+      &:before,
+      &:after {
+        content: '';
+        width: 2.5rem;
+        height: 0.24rem;
+        background-color: white;
+      }
+  
+      &:before,
+      &:after {
+        position: absolute;
+        transition: all 0.2s ease-in;
+      }
+  
+      &:before {
+        top: -0.6rem;
+      }
+  
+      &:after {
+        bottom: -0.6rem;
+      }
+  
+      &--show {
+        background-color: var(--color-transparent);
+  
+        &:before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+  
+        &:after {
+          bottom: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
