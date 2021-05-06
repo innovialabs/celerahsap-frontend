@@ -1,0 +1,23 @@
+.references {
+  &__title {
+    font-size: 2.55rem;
+    text-align: center;
+    color: $mainBrown;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__img {
+    object-fit: cover;
+    cursor: pointer;
+  }
+}

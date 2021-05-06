@@ -1,9 +1,7 @@
+import References from '../Components/references';
+
 function Referanslar() {
-    return(
-        <div>
-           Referanslar Sayfası
-        </div>
-    )
+  return <References />;
 }
 
-export default Referanslar
+export default Referanslar;
