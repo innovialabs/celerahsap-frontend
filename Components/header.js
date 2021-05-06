@@ -7,7 +7,9 @@ function Header() {
     <div className="site-header">
       <HeaderTop />
       <HeaderLogos />
+      <div className="site-header__nav-mobile-container">
       <NavigationMobile/>
+      </div>
       <HeaderNav />
     </div>
   );

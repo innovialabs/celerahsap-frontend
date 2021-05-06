@@ -1,6 +1,10 @@
 .primary-nav {
 	margin: 30px 20px 0px;
 
+	@include respondMax($tab-port) {
+		display: none;
+	  }
+
 	&__dropdown {
 		position: relative;
 		display: inline-block;

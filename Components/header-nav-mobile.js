@@ -96,7 +96,7 @@ function NavigationMobile() {
 
           <li className="nav-mobile__item">
             <Link href="/referanslar">
-              <a className="nav-mobile__link">Referanlar</a>
+              <a className="nav-mobile__link">Referanslar</a>
             </Link>
           </li>
 
