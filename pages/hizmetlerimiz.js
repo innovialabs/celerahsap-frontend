@@ -1,11 +1,12 @@
 import App from 'next/app';
 import { fetchAPI } from '../pages/api/api';
-
+import Image from 'next/image'
 function Hizmetlerimiz({ hizmetlerimiz }) {
 	return (
 		<div className='page-section page-section--white'>
 			<div className='row row__medium-10'>
 				<div className='page-section__heading'>Hizmetlerimiz</div>
+				<Image src="/images/celer002.png" width="800" height="400"   />
 				<div className='page-section__text'>
 					Çeler Ahşap ve Dekorasyon, üç kardeş olan Ahmet Çeler, Musa Çeler ve
 					Cenk Çeler'in ortaklığı ile yönetilmektedir. Kuzey Kıbrıs Türk

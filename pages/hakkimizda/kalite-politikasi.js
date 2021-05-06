@@ -1,11 +1,12 @@
 import App from 'next/app';
 import { fetchAPI } from '../api/api';
-
+import Image from 'next/image';
 function KalitePolitikasi({ kalitepolitikasi }) {
 	return (
 		<div className='page-section page-section--white'>
 			<div className='row row__medium-10'>
 				{<div className='page-section__heading'>Kalite Politikamız</div>}
+				<Image src='/images/celer004.png' width='800' height='400' />
 				<div className='page-section__text'>
 					Firma olarak 2012 yılı sonunda sahip olduğumuz hizmetin kalitesini
 					ISO9001 ve CE Marking sertifikaları ile ısbat etmeyi hedefliyoruz.

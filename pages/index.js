@@ -5,7 +5,7 @@ function Home() {
 	return (
 		<div className='wrapper homepage'>
 			<HomeSlider 
-			src='https://i0.wp.com/www.farklifarkli.com/wp-content/uploads/2019/05/ahsap_hediye_dukkani1.jpg'
+			src='/images/celer001.png'			
 			style={{width:100}}
 			 />
 			<div className='homepage--wrapper'>

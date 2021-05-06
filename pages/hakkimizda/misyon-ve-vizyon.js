@@ -1,11 +1,12 @@
 import App from 'next/app';
 import { fetchAPI } from '../api/api';
-
+import Image from 'next/image'
 function MisyonVeVizyon({ misyonvevizyon }) {
 	return (
 		<div className='page-section page-section--white'>
 			<div className='row row__medium-10'>
 				{<div className='page-section__heading'>Misyon & Vizyon</div>}
+				<Image src="/images/celer003.png" width="800" height="400"   />
 				<div className='page-section__text'>
 					<h4>Misyon</h4>
           
