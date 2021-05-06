@@ -5,7 +5,7 @@ function Home() {
 	return (
 		<div className='wrapper homepage'>
 			<HomeSlider 
-			src='/images/celer001.png'			
+			src='/images/celer006.jpg'			
 			style={{width:100}}
 			 />
 			<div className='homepage--wrapper'>
