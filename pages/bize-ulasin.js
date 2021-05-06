@@ -36,7 +36,6 @@ function BizeUlasin() {
                   +90 (548) 834 04 00
                 </a>
               </div>
-              <Map />
             </div>
             <form className="contact__form">
               <div className="contact__form-group">
@@ -73,6 +72,7 @@ function BizeUlasin() {
                 </button>
               </div>
             </form>
+            <Map />
           </div>
         </div>
       </div>
