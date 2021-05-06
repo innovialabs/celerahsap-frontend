@@ -25,7 +25,7 @@ function HeaderNav() {
             <Link href="/urunlerimiz/kapi">Kapı</Link>
             <Link href="/urunlerimiz/mutfak">Mutfak</Link>
             <Link href="/urunlerimiz/dolap">Dolap</Link>
-            <Link href="/urunlerimiz/cardak">Çardak</Link>
+            <Link href="/urunlerimiz/diger">Diğer</Link>
           </div>
         </li>
         <li>

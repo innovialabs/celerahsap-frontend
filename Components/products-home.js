@@ -13,19 +13,19 @@ function ProductsHome() {
           </li>
 
           <li className="products-home__item">
-            <Link href="/urunlerimiz/kapi">
+            <Link href="/urunlerimiz/dolap">
               <a className="products-home__link">Dolaplar</a>
             </Link>
           </li>
 
           <li className="products-home__item">
-            <Link href="/urunlerimiz/kapi">
+            <Link href="/urunlerimiz/mutfak">
               <a className="products-home__link">Mutfaklar</a>
             </Link>
           </li>
 
           <li className="products-home__item">
-            <Link href="/urunlerimiz/kapi">
+            <Link href="/urunlerimiz/diger">
               <a className="products-home__link">Diğer</a>
             </Link>
           </li>
