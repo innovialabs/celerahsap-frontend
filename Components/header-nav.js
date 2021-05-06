@@ -20,7 +20,7 @@ function HeaderNav() {
           <Link href="/hizmetlerimiz">Hizmetlerimiz</Link>
         </li>
         <li className="primary-nav__dropdown">
-          <Link href="#">Ürünlerimiz</Link>
+          <Link href="/urunlerimiz">Ürünlerimiz</Link>
           <div className="primary-nav__dropdown-content">
             <Link href="/urunlerimiz/kapi">Kapı</Link>
             <Link href="/urunlerimiz/mutfak">Mutfak</Link>
