@@ -2,18 +2,27 @@ import App from 'next/app';
 import { fetchAPI } from '../api/api';
 
 function MisyonVeVizyon({ misyonvevizyon }) {
-  const createMarkup = htmlString => ({ __html: htmlString });
-  return (
-    <div className="page-section page-section--white">
-      <div className="row row__medium-10">
-        {/* <div className="page-section__heading">{misyonvevizyon.Baslik}</div> */}
-        <div className="page-section__text" dangerouslySetInnerHTML={createMarkup()}>
-          {/* {misyonvevizyon.Icerik} */}
-        </div>
-      </div>
-      <div className="row__medium-4"></div>
-    </div>
-  );
+	return (
+		<div className='page-section page-section--white'>
+			<div className='row row__medium-10'>
+				{<div className='page-section__heading'>Misyon & Vizyon</div>}
+				<div className='page-section__text'>
+					<h4>Misyon</h4>
+          
+          Firmamız mevcut kapasitesini ve hizmet kalitesini hızla
+					arttırarak ahşap ve dekorasyon sektöründe ihracat yapıp ülke
+					ekonomisine yüksek ölçekli katkılar koymayı ve Kıbrıs halkına
+					hakettiği ürün ve hizmeti sunmayı kendisine misyon edinmiştir.
+          
+          <h4>Vizyon </h4> 
+					Çeler Ahşap ve Dekorasyon olarak önümüzdeki 10 yıl sonunda Akdeniz'in
+					en büyük ahşap ve dekorasyon hizmeti veren firmaları arasında ön
+					sıralarda olmayı kendimize vizyon edindik.
+				</div>
+			</div>
+			<div className='row__medium-4'></div>
+		</div>
+	);
 }
 
 // export async function getStaticProps() {

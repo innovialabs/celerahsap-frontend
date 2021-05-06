@@ -13,7 +13,7 @@ function HeaderNav() {
           <Link href="/hakkimizda">Hakkımızda</Link>
           <div class="primary-nav__dropdown-content">
             <Link href="/hakkimizda/misyon-ve-vizyon">Misyon & Vizyon</Link>
-            <Link href="/hakkimizda/kalite-politikası">Kalite Politikası</Link>
+            <Link href="/hakkimizda/kalite-politikasi">Kalite Politikası</Link>
           </div>
         </li>
         <li>

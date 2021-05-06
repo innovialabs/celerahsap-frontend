@@ -11,6 +11,10 @@
   &__text{
     font-size: 0.9rem;
     line-height: 1.3rem;
+
+    & h4{
+      color: $mainOrange;
+    }
   }
 
   @mixin atMedium {
