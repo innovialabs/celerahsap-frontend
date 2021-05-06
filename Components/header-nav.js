@@ -11,7 +11,7 @@ function HeaderNav() {
         </li>
         <li className="primary-nav__dropdown">
           <Link href="/hakkimizda">Hakkımızda</Link>
-          <div class="primary-nav__dropdown-content">
+          <div className="primary-nav__dropdown-content">
             <Link href="/hakkimizda/misyon-ve-vizyon">Misyon & Vizyon</Link>
             <Link href="/hakkimizda/kalite-politikasi">Kalite Politikası</Link>
           </div>
