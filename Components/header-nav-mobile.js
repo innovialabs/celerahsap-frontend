@@ -86,8 +86,8 @@ function NavigationMobile() {
               </li>
 
               <li className="sublist__item">
-                <Link href={`/urunlerimiz/cardak`}>
-                  <a className="sublist__link">Çardak</a>
+                <Link href={`/urunlerimiz/diger`}>
+                  <a className="sublist__link">Diğer</a>
                 </Link>
               </li>
               
