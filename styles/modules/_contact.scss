@@ -6,80 +6,83 @@
 
   &__container {
     display: flex;
-    justify-content: space-evenly;
-
-    @include respondMax($tab-port--sm) {
-      flex-direction: column;
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin: 0 auto;
   }
 
   &__details {
-    flex: 0 1 50%;
+    width: 100%;
+    margin-bottom: 30px;
 
-    @include respondMax($tab-port--sm) {
-      justify-self: center;
-      flex: 0 1 100%;
-      margin-bottom: 60px;
+    &-link {
+      text-decoration: none;
+      color: $mainBrown;
     }
   }
 
   &__form {
-    flex: 0 1 40%;
-
-    @include respondMax($tab-port--sm) {
-      flex: 0 1 100%;
-    }
+    width: 100%;
 
     & > *:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
 
     &-group {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &-label {
-      color: $mainBrown;
-      font-weight: 600;
-      margin-bottom: 10px;
+      // color: $mainBrown;
+      // font-weight: 600;
+      margin-bottom: 5px;
     }
 
     &-input,
     &-textarea {
       font-family: sans-serif;
-      border: 1px solid $mainBrown;
-      outline: none;
-      padding: 10px 15px;
-      transition: all 0.3s;
+      // border: 1px solid $mainBrown;
+      // outline: none;
+      // padding: 10px 15px;
+      // transition: all 0.3s;
 
-      &:focus {
-        border: 1px solid $mainOrange;
-      }
+      // &:focus {
+      // border: 1px solid $mainOrange;
+      // }
+    }
+
+    &-input {
+      width: 50%;
     }
 
     &-textarea {
+      width: 100%;
       resize: none;
-      height: 200px;
+      height: 100px;
     }
 
-    &-button {
-      outline: none;
-      border: none;
-      align-self: flex-end;
-      font-size: 16px;
-      font-weight: 600;
-      padding: 10px 15px;
-      color: #fff;
-      background-color: $mainBrown;
-      cursor: pointer;
+    // &-button {
+    //   outline: none;
+    //   border: none;
+    //   align-self: flex-end;
+    //   font-size: 16px;
+    //   font-weight: 600;
+    //   padding: 10px 15px;
+    //   color: #fff;
+    //   background-color: $mainBrown;
+    //   cursor: pointer;
 
-      transition: all 0.3s;
+    //   transition: all 0.3s;
 
-      &:hover {
-        background-color: #fff;
-        color: $mainBrown;
-      }
-    }
+    //   &:hover {
+    //     background-color: #fff;
+    //     color: $mainBrown;
+    //   }
+    // }
   }
 }

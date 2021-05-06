@@ -14,15 +14,27 @@ function BizeUlasin() {
               </div>
               <div className="contact__details-group">
                 <div className="empty-space"></div>
-                <b>E-posta</b>:<a href="mailto:info@celerahsap.com"> info@celerahsap.com</a>
+                <b>E-posta</b>:
+                <a className="contact__details-link" href="mailto:info@celerahsap.com">
+                  {' '}
+                  info@celerahsap.com
+                </a>
               </div>
               <div className="contact__details-group">
                 <div className="empty-space"></div>
-                <b>Telefon</b>: <a href="tel:+903922253352"> +90 (392) 225 33 52</a>
+                <b>Telefon</b>:{' '}
+                <a className="contact__details-link" href="tel:+903922253352">
+                  {' '}
+                  +90 (392) 225 33 52
+                </a>
               </div>
               <div className="contact__details-group">
                 <div className="empty-space"></div>
-                <b>Cep Telefonu</b>: <a href="tel:+905488340400"> +90 (548) 834 04 00</a>
+                <b>Cep Telefonu</b>:{' '}
+                <a className="contact__details-link" href="tel:+905488340400">
+                  {' '}
+                  +90 (548) 834 04 00
+                </a>
               </div>
               <Map />
             </div>
