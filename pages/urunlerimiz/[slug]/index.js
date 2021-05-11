@@ -5,9 +5,9 @@ import { fetchAPI } from '../../api/api';
 import Products from '../../../Components/products';
 
 function UrunSayfasi(props) {
-  const { products } = props;
+  const { category } = props;
 
-  return <Products products={products} />;
+  return <Products products={category.urunlers} />;
 }
 
 export const getStaticPaths = async () => {
@@ -24,11 +24,11 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }) => {
-  const products = await fetchAPI(`/urunlers?urun_kategori.kategori_slug=${params.slug}`);
+  const category = await fetchAPI(`/kategorilers?kategori_slug=${params.slug}`);
 
   return {
     props: {
-      products
+      category
     }
   };
 };
