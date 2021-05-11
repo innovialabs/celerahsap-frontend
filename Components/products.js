@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 // * Api
 import getStrapiImage from '../pages/api/media';
 
@@ -12,7 +14,7 @@ function Products(props) {
           {products.map((product, index) => {
             return (
               <li key={index} className="products__item">
-                <img className="products__img" src={getStrapiImage(product.urun_fotograf.url)} alt={product.urun_kategori.kategori_ad} />
+                <Image src={getStrapiImage(product.urun_fotograf.url)} alt={product.urun_kategori.kategori_ad} layout="fill" objectFit="cover" />
               </li>
             );
           })}

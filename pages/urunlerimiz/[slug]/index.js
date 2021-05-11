@@ -2,7 +2,7 @@
 import { fetchAPI } from '../../api/api';
 
 // * Components
-import Products from '../../../Components/products';
+import Products from '../../../components/products';
 
 function UrunSayfasi(props) {
   const { products } = props;
@@ -29,7 +29,8 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       products
-    }
+    },
+    revalidate: 180
   };
 };
 
