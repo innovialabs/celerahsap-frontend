@@ -7,7 +7,10 @@ import Products from '../../../Components/products';
 function UrunSayfasi(props) {
   const { category } = props;
 
-  return <Products products={category.urunlers} />;
+  return (
+    <h1>Ürünler</h1>
+    // <Products products={category.urunlers} />
+  );
 }
 
 export const getStaticPaths = async () => {
