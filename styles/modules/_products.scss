@@ -17,10 +17,15 @@
   }
 
   &__item {
-    position: relative;
     list-style: none;
     flex: 0 1 30%;
-    height: 15rem;
+    max-height: 15rem;
     border: 1px solid $mainOrange;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
