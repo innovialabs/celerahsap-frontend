@@ -60,30 +60,30 @@ function NavigationMobile() {
           </li>
 
           <li className="nav-mobile__item">
-            <Link href="#">
+            <Link href="/urunlerimiz">
               <a className="nav-mobile__link">Ürünlerimiz</a>
             </Link>
             <ul className="sublist">
               <li className="sublist__item">
-                <Link href={`/urunlerimiz/kapi`}>
+                <Link href="/urunlerimiz/kapi">
                   <a className="sublist__link">Kapı</a>
                 </Link>
               </li>
 
               <li className="sublist__item">
-                <Link href={`/urunlerimiz/mutfak`}>
+                <Link href="/urunlerimiz/mutfak">
                   <a className="sublist__link">Mutfak</a>
                 </Link>
               </li>
 
               <li className="sublist__item">
-                <Link href={`/urunlerimiz/dolap`}>
+                <Link href="/urunlerimiz/dolap">
                   <a className="sublist__link">Dolap</a>
                 </Link>
               </li>
 
               <li className="sublist__item">
-                <Link href={`/urunlerimiz/diger`}>
+                <Link href="/urunlerimiz/diger">
                   <a className="sublist__link">Diğer</a>
                 </Link>
               </li>
