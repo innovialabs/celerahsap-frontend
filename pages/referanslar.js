@@ -1,4 +1,4 @@
-import References from '../components/references';
+import References from '../Components/references';
 
 function Referanslar() {
   return <References />;

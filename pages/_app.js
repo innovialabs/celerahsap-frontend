@@ -3,8 +3,8 @@ import App from 'next/app';
 import Head from 'next/head';
 
 // * Components
-import Footer from '../components/footer';
-import Header from '../components/header';
+import Footer from '../Components/footer';
+import Header from '../Components/header';
 
 import { createContext } from 'react';
 

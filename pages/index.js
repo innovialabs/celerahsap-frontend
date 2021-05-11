@@ -1,5 +1,5 @@
-import BoxItem from '../components/home-box-item';
-import HomeSlider from '../components/home-slider';
+import BoxItem from '../Components/home-box-item';
+import HomeSlider from '../Components/home-slider';
 
 function Home() {
   return (

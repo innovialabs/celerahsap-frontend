@@ -2,7 +2,7 @@
 import { fetchAPI } from '../../api/api';
 
 // * Components
-import Products from '../../../components/products';
+import Products from '../../../Components/products';
 
 function UrunSayfasi(props) {
   const { products } = props;

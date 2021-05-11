@@ -1,4 +1,4 @@
-import Map from '../components/map';
+import Map from '../Components/map';
 
 function BizeUlasin() {
   return (
