@@ -37,8 +37,6 @@ function ContactForm() {
     const name = event.target.name;
     const value = event.target.value;
 
-    console.log(value);
-
     setForm(prev => ({
       ...prev,
       [name]: value
