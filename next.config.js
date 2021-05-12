@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['herokubackenddeployment.herokuapp.com']
+    domains: ['https://www.celerahsap.com']
   }
 };
