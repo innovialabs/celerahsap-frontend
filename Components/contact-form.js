@@ -19,7 +19,6 @@ function ContactForm() {
       const response = await Axios.post(`${getStrapiURL()}/contact-form`, form);
       if (response.status === 200) {
         setFormStatus('sent');
-        console.log(form);
       }
     } catch (error) {
       console.error(`There has been an error that occured. Request might have been cancelled. Error: ${error}`);
