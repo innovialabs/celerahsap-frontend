@@ -23,18 +23,24 @@ function UrunSayfasi(props) {
   );
 }
 
-export const getStaticPaths = async () => {
+export const getStaticPaths = async ({ locales }) => {
   const categories = await fetchAPI(`/kategorilers`);
 
+  const paths = locales
+    .map(locale => {
+      return categories.map(category => {
+        return {
+          params: {
+            slug: category.kategori_slug
+          },
+          locale: locale
+        };
+      });
+    })
+    .flat();
+
   return {
-    paths: categories.map(category => {
-      return {
-        params: { slug: category.kategori_slug },
-        locale: 'tr',
-        params: { slug: category.kategori_slug },
-        locale: 'en'
-      };
-    }),
+    paths,
     fallback: false
   };
 };
