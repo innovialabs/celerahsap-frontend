@@ -1,50 +1,52 @@
 .site-header {
-	padding: 10px 0;
-	margin: 60px 0px 0px 0px;
-	width: 100%;
-	z-index: 2;
-	
+  padding: 10px 0;
+  margin: 60px 0px 0px 0px;
+  width: 100%;
+  z-index: 2;
 
+  &__language {
+    float: right;
+    display: inline-block;
+    width: 100%;
 
-	
+    &-link {
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
 
-	&__language {
-		float: right;
-		display: inline-block;
-		width: 100%;
+    &-btn {
+      float: right;
+      margin-right: 1.2rem;
+      cursor: pointer;
 
-		& a {
-			color: #4e3d2f;
-			text-decoration: none;
-			font-size: 0.9rem;
-		}
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      background-color: transparent;
 
-		&-link {
-			float: right;
-			margin-right: 1.2rem;
+      &--disabled {
+        color: #4e3d2f;
+      }
+    }
+  }
 
-			&--active a {
-				color: #fff;
-			}
-		}
-	}
+  &__image {
+    height: 124px;
 
-	&__image {
-		height: 124px;
+    &-left {
+      padding: 38px 0 0 39px;
+      float: left;
+    }
+    &-right {
+      padding: 45px 44px 0 0;
+      float: right;
+    }
+  }
 
-		&-left {
-			padding: 38px 0 0 39px;
-			float: left;
-		}
-		&-right {
-			padding: 45px 44px 0 0;
-			float: right;
-		}
-	}
-
-	&__nav-mobile-container{
-		width: 100%;
-		float: left;
-		margin: 30px 0px;
-	}
+  &__nav-mobile-container {
+    width: 100%;
+    float: left;
+    margin: 30px 0px;
+  }
 }

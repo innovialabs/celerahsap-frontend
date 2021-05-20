@@ -1,21 +1,43 @@
+import { Fragment } from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 
-function KalitePolitikasi({ kalitepolitikasi }) {
+// * Translation
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+
+function KalitePolitikasi() {
+  const { t } = useTranslation('quality-policy');
+
   return (
-    <div className="page-section page-section--white">
-      <div className="row row__medium-10">
-        {<div className="page-section__heading">Kalite Politikamız</div>}
-        <Image src="/images/celer004.png" width="800" height="400" />
-        <div className="page-section__text">
-          Firma olarak 2012 yılı sonunda sahip olduğumuz hizmetin kalitesini ISO9001 ve CE Marking sertifikaları ile ısbat etmeyi hedefliyoruz.
-          <div className="empty-space"></div>
-          Günümüzün en önemli gereksinimi haline gelen kalite sertifikasının öneminin farkında olarak, mevcut sistemimizin işleyişini iyileştirerek ve geliştirirerek uluslararası kalite seviyesine çıkarmak istiyoruz. Bunun için 2010 yılının başlaması ile beraber belgelendirme çalışmalarımıza hız katarak bu süreci bir an önce tamamlamak ve kalite sertifikalarına, hakederek, sahip olmak için çalışıyoruz.
-          <div className="empty-space"></div> Böylece siz değerli müşterilerimize sertifika ile taçlandırılmış kaliteli bir hizmetin sözünü veriyoruz.
+    <Fragment>
+      <Head>
+        <title>{t('quality-policy')} | Çeler Ahşap & Dekor</title>
+      </Head>
+      <div className="page-section page-section--white">
+        <div className="row row__medium-10">
+          <div className="page-section__heading">{t('quality-policy')}</div>
+          <Image src="/images/celer004.png" width="800" height="400" />
+          <div className="page-section__text">
+            {t('quality-policy-descriptions.line-1')}
+            <div className="empty-space"></div>
+            {t('quality-policy-descriptions.line-2')}
+            <div className="empty-space"></div>
+            {t('quality-policy-descriptions.line-3')}
+          </div>
         </div>
+        <div className="row__medium-4"></div>
       </div>
-      <div className="row__medium-4"></div>
-    </div>
+    </Fragment>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['quality-policy', 'navigation', 'footer']))
+    }
+  };
 }
 
 export default KalitePolitikasi;

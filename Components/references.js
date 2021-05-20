@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+// * Translation
+import { useTranslation } from 'next-i18next';
+
 function References() {
+  const { t } = useTranslation('references');
+
   return (
     <div className="references">
       <div className="page-section page-section--white">
-        <h1 className="references__title">Referanslar</h1>
+        <h1 className="references__title">{t('references-title')}</h1>
         <div className="references__container">
           <div className="references__wrapper">
             <Link href="https://www.facebook.com/celer.ahsap/videos/915756715172246/">

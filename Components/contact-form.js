@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import Axios from 'axios';
 
+// * Translation
+import { useTranslation } from 'next-i18next';
+
+// * Api
 import { getStrapiURL } from '../pages/api/api';
 
 function ContactForm() {
+  const { t } = useTranslation('contact-form');
   const [formStatus, setFormStatus] = useState('');
   const [form, setForm] = useState({
     name: '',
@@ -46,7 +51,7 @@ function ContactForm() {
     <form className="contact__form" onSubmit={handleSubmit}>
       <div className="contact__form-group">
         <label className="contact__form-label" htmlFor="name">
-          Isim
+          {t('name')}
         </label>
         <input onChange={handleChange} className="contact__form-input" name="name" type="text" required />
       </div>
@@ -60,23 +65,23 @@ function ContactForm() {
 
       <div className="contact__form-group">
         <label className="contact__form-label" htmlFor="subject">
-          Konu
+          {t('subject')}
         </label>
         <input onChange={handleChange} className="contact__form-input" name="subject" type="text" required />
       </div>
 
       <div className="contact__form-group">
         <label className="contact__form-label" htmlFor="message">
-          Mesajınız
+          {t('message')}
         </label>
         <textarea onChange={handleChange} className="contact__form-textarea" name="message" type="text" required />
       </div>
 
       <div className="contact__form-group">
         <button className="contact__form-button" type="submit" disabled={formStatus === 'sent'}>
-          Gönder
+          {t('send-btn')}
         </button>
-        <p className={`contact__form-status ${formStatus === 'sent' ? 'contact__form-status--active' : ''}`}>Mesajınız tarafımıza başarıyla iletilmiştir.</p>
+        <p className={`contact__form-status ${formStatus === 'sent' ? 'contact__form-status--active' : ''}`}>{t('success-msg')}</p>
       </div>
     </form>
   );

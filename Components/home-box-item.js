@@ -1,8 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+// * Translation
+import { useTranslation } from 'next-i18next';
+
 function BoxItem(props) {
   const { image, imageL, text, link, imageW, imageH } = props;
+  const { t } = useTranslation('common');
 
   return (
     <div className="home-box-item">
@@ -15,7 +19,7 @@ function BoxItem(props) {
         </div>
         <div className="home-box-item__content-text">{text}</div>
         <div className="home-box-item__content-link">
-          <Link href={link}>Detaylar</Link>
+          <Link href={link}>{t('details')}</Link>
         </div>
       </div>
     </div>
